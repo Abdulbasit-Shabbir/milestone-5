@@ -1,0 +1,71 @@
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sharesble Resume Builder</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>sharesble Resume Builder</h1>
+    <form id="resume_form">
+    <fieldset>
+        <legend>Personal Information</legend>
+        <label for=" username">username</label>
+        <input type="text" id="name" placeholder = "Enter your name"required>
+  
+        <label for="name">Name</label>
+        <input type="text" id="name" placeholder = "Enter your name"required>
+
+        <label for="contact"></label>
+        <input type="text" id="contact" placeholder="Enter your contact no" required>
+       
+
+        <label for="name"></label>
+        <input type="text" id="email" placeholder = "Enter your Email"required>
+
+    </fieldset>
+
+    <fieldset>
+        <legend> Education</legend>
+        <label for="education">Education</label>
+        <textarea id="education" placeholder="Enter your education " rows="4" required></textarea>
+    </fieldset>
+
+    <fieldset>
+        <legend> Experience</legend>
+        <label for="experiene">Experience</label>
+        <textarea id="experience" placeholder="Enter your work experience " rows="4" required></textarea>
+    </fieldset>
+
+    <fieldset>
+        <legend> Skills</legend>
+        <label for="Skills">Skills</label>
+        <textarea id="skills" placeholder="Enter your skills " rows="4" required></textarea>
+    </fieldset>
+
+ <button type="submit"><b>Generate Resume</b></button>
+</form>
+<br>
+
+ <div id="resume-display" contenteditable="true">
+ <!-- RESUME WILL BE BELOW-->
+ </div>
+
+
+ <br>
+
+ <div id="sharesble-link-container" style="display: none;">
+    <h2>Sharesble link</h2>
+    <p>Here is your unique link to view or edite your resume</p>
+    <a href="#" id="sharesble-link" target="_blank"></a>
+    <br>
+
+    <button id="download-pdf"><b>Download as PDF</b></button>
+</div>
+
+ <script src="script.js"></script>
+
+
+</body>
+</html>
